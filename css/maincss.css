@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Poppins;
+  src: url('/font/Poppins.ttf');
+}
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --dark-blue:#1a237e;
+  --blue: #3f51b5;
+  --violet: #7b1fa2;
+  --purple: #9c27b0;
+  --translusent-blue: rgba(63, 81, 181, 0.2);
+}
+
+html {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+li{
+  list-style: none;
+}
+
+
+.menucontainer{
+  border-radius: 0 10px ;
+}

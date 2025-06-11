@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Music</title>
+  <link rel="stylesheet" href="/css/maincss.css">
+  <link rel="stylesheet" href="/css/homepage.css">
+  <link rel="stylesheet" href="/css/music.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button class="menubtn" onclick="Show()"><img src="/icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon"></button>
+    </nav>
+    <div id="menu-container" class="menucontainer" class="showed" class="unshow">
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="items">
+            <label for="refresh"><img src="/icons/refresh_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="Music.html" id="refresh" class="icons">Refresh</a></li>
+          </div>
+          <div class="items">
+            <label for="music"><img src="/icons/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="homepage.html" id="music" class="icons">Home</a></li>
+          </div>  
+          <div class="items">
+            <label for="Pictures"><img src="/icons/image_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="Pic.html" id="Pictures" class="icons">Pictures</a></li>
+          </div>        
+          <div class="items">
+            <label for="Video"><img src="/icons/movie_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="Vid.html" id="Video" class="icons">Videos</a></li>
+          </div>        
+          <div class="items">
+            <label for="Facebook"><img src="/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="https://web.facebook.com/christiandale.dechavez.9" id="Facebook" class="icons">Miss me?</a></li>
+          </div>        
+          <div class="items">
+            <label for="calendar"><img src="/icons/calendar_month_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="calendar.html" id="calendar" class="icons">Our important dates</a></li>
+          </div>        
+          <div class="items">
+            <label for="Gme"><img src="/icons/play_arrow_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="Game.html" id="Games" class="icons">Games</a></li>
+          </div>      
+          <div class="items">
+            <label for="logout"><img src="/icons/logout_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="icon" class="label"></label>
+            <li><a href="#" onclick="logout()" id="logoutbtn" class="icons">Logout</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div>
+      <audio id="audioPlayer" src="/music/love.mp3" preload="auto"></audio>
+      <div id="audioControls">
+        <div class="controls">
+          <h2>Wave to Earth</h2>
+          <div class="range">
+            <input class="slider" type="range" id="progressBar" value="0" max="100" step="1" />
+            <input class="slider" type="range" id="volumeControl" value="100" max="100" step="1" />
+          </div>
+          <div class="btns">
+            <button id="playPauseBtn">Play</button>
+            <button id="muteBtn">Mute</button>
+          </div>
+          <div class="time">
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </main>
+  <script src="/javascript/menu.js"></script>
+  <script src="/javascript/music.js"></script>
+  <script>
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.replace('index.html');
+    }
+  </script>
+</body>
+</html>

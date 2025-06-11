@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/maincss.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="message-container" class="active" id="message">
+      <div class="container-message">
+        <h2>Welcome!</h2>
+        <p>
+          this website will be my first gift to you.<br />I will post every
+          photo,video you send me here,<br />
+          I love you always .
+        </p>
+        <h2>Happy 4th mothsary my love</h2>
+        <button id="loginbtn">Enter</button>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="login-container">
+        <h3>Login</h3>
+      </div>
+      <form id="loginForm" class="container">
+          <div class="error"></div>
+          <input type="text" id="username" placeholder="Username" /><br />
+          <input type="password" id="password" placeholder="Password" /><br />
+          <button type="submit" onclick="login()" >Login</button>
+      </form>
+    </div>
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
