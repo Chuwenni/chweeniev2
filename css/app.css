@@ -1,5 +1,5 @@
  body{
-  background: url('/backgrounds/bg1.webp') no-repeat;
+  background: url('./backgrounds/bg1.webp') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -172,11 +172,12 @@
   }
 
   .wrapper{
-    width: 300px;
+    width: 400px;
   }
 
   .container input{
-    font-size: 1.5rem;
+    font-size: 10px;
+    width: 300px;
   }
 
   @-ms-viewport{
