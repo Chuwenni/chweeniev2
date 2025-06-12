@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: url('./backgrounds/bg6.webp') no-repeat;
+  background: url('../backgrounds/bg6.webp') no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;

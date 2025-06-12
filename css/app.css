@@ -1,5 +1,5 @@
  body{
-  background: url('./backgrounds/bg1.webp') no-repeat;
+  background: url('../backgrounds/bg1.webp') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
